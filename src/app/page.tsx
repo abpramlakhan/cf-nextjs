@@ -1,95 +1,55 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Image from 'next/image';
+import Link from 'next/link';
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    return (
+        <main>
+            <header className='header-nonLoggedIn w-100'>
+                <div className='toppanel w-100'>
+                    <div className='container d-flex justify-content-between align-items-center position-relative'>
+                        <div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+                        </div>
+
+                        <div className='d-flex'>
+                            <div className='langSelector d-flex align-items-center me-3'>
+                                <Image
+                                    src={'https://cdn.abpweddings.com/documents/6187e2536868129cb13ddd18836ec776/1749119820639.webp'}
+                                    height={25}
+                                    width={25}
+                                    alt='' />
+
+                                <span className='ms-2'>English</span>
+                            </div>
+
+                            <button type='button' className='btn btn-outline-light text-white headerContactBtn'>Contact Us</button>
+                            <button type='button' className='btn btn-danger text-white ms-3'>Login</button>
+                        </div>
+
+                        <div className='logo bg-white position-absolute top-0 start-0 p-3'>
+                            <Link href={'/'}>
+                                <Image
+                                    src={'https://cdn.abpweddings.com/documents/8d8a8a59f510ccc87cb314fc6acf64b0/1749119825787.webp'}
+                                    width={234}
+                                    height={130}
+                                    alt='ABP Weddings Logo | Matrimony Site For Bengali and Marathi People' />
+                            </Link>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </header>
+            <section className='container-fluid heroSection'>
+                <div className='container d-flex justify-content-end'>
+                    <div className='registerationBox bg-white'>
+                        <h1 className='text-center heading'>Create your profile for <strong>FREE</strong></h1>
+                    </div>
+                </div>
+            </section>
+        </main>
+    );
 }
