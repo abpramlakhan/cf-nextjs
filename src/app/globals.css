@@ -1,36 +1,113 @@
-h1,h2{
+h1,
+h2 {
     font-family: 'Exo';
 }
-.header-nonLoggedIn .toppanel{
-    background-color: #b18535;
-    height: 57px;
+
+a {
+    text-decoration: none;
 }
-.header-nonLoggedIn .toppanel > div{
-    height: 57px;
+.linkDanger{
+    color: #DA2128;
 }
-.header-nonLoggedIn .toppanel .logo{
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+.linkDanger:hover{
+    color: #212529;
 }
-.heroSection{
-    background-image: url(/images/5c119fd225812d0d5aae4fff4c745d89.webp);
-    background-size: cover;
-    min-height: 400px;
-}
-.registerationBox{
+
+.registerationBox {
     padding: 30px;
     max-width: 400px;
     width: 100%;
     border-radius: 25px;
-    min-height: 600px;
+    min-height: 565px;
     margin-top: 40px;
     margin-bottom: 30px;
 }
-.registerationBox .heading{
+
+.registerationBox .heading {
     font-size: 22px;
     color: #2B2B2B;
     font-weight: 600;
 }
-.registerationBox .heading > strong{
+
+.registerationBox .heading>strong {
     font-weight: 900;
+}
+
+.phonenumberlist {
+    font-size: 13px;
+    width: 85px;
+}
+
+.phonenumberlist .select__control {
+    border-width: 0;
+    border-color: transparent;
+    border-radius: 0;
+}
+
+.phonenumberlist .select__indicator-separator {
+    display: none;
+}
+
+.phonenumberlist .select__indicator {
+    padding: 0;
+}
+
+.registerationBox .r-label {
+    font-size: 12px;
+    color: #353535;
+    display: block;
+    transition: all linear 0.25s;
+}
+
+/* .registerationBox .formGroup{
+    border-bottom:  1px solid #CBCFD7;
+} */
+.registerationBox .form-control {
+    border-radius: 0;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.registerationBox .form-control:focus,
+.registerationBox .form-control:focus-visible {
+    box-shadow: none;
+}
+
+.inputElementWrapper {
+    position: relative;
+    border-bottom: 1px solid #CBCFD7;
+}
+
+.inputElementWrapper.hidden .formGroup {
+    opacity: 0;
+}
+
+.inputElementWrapper.hidden .r-label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    right: 0;
+    z-index: 2;
+    color: #B1B1B1;
+}
+
+.registerationBox .btnsubmit {
+    background-color: #262626;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.registerationBox .afterBtnText{
+    color: #212529;
+    font-size: 13px;
+    font-weight: 300;
+}
+.registerationBox .afterBtnText2{
+    color: #212529;
+    font-size: 12px;
+    font-weight: 300;
 }

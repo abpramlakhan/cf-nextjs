@@ -1,0 +1,79 @@
+.header-nonLoggedIn .toppanel {
+    background-color: #b18535;
+    height: 57px;
+}
+
+.header-nonLoggedIn .toppanel>div {
+    height: 57px;
+}
+
+.header-nonLoggedIn .toppanel .logo {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.heroSection {
+    background-image: url(/images/5c119fd225812d0d5aae4fff4c745d89.webp);
+    background-size: cover;
+    min-height: 400px;
+}
+
+.nonloggedin-footer {
+    background-color: #48331c;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.nonloggedin-footer .footerTitle {
+    color: #a47b31;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    padding: 0 0 10px;
+}
+
+.nonloggedin-footer .footerTitle::after {
+    position: absolute;
+    content: "";
+    background-color: #a47b31;
+    width: 90px;
+    height: 2px;
+    left: 0;
+    bottom: 0px;
+}
+
+.nonloggedin-footer .footerLinkList {
+    color: #c7c7c7;
+    font-weight: 500;
+}
+
+.nonloggedin-footer .footerLinkList>li:not(:last-child) {
+    padding-right: 10px;
+}
+
+.nonloggedin-footer .footerLinkList>li a {
+    color: #c7c7c7;
+}
+.grayHeading{
+    color: #626262;
+    font-size: 29px;
+    font-weight: 600;
+}
+.matchMakercard {
+    background-color: #fef4e0;
+    padding: 25px 30px;
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 15px;
+}
+
+.matchMakercard .title {
+    font-size: 18px;
+    color: #dc2b31;
+    margin-top: 10px;
+}
+
+.matchMakercard .cardBody {
+    font-size: 14px;
+    color: #626262;
+}

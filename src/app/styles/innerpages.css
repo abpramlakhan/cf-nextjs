@@ -1,0 +1,22 @@
+.headerinner {
+    background-color: #9f0000;
+    background-image: url(/images/header-pattern.jpeg);
+}
+.headerinner .logoimg{
+    background-color: #fff;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.footerinner{
+    background-color: #626262;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footerinner .mainLink{
+    gap: 15px;
+}
+.footerinner .mainLink a{
+    color: #fff;
+    
+}
