@@ -31,7 +31,13 @@
     outline: 0;
     box-shadow: none;
 }
-
+.doubleGroupedInput{
+    border-bottom: 1px solid #838384;
+    font-size: 14px;
+}
+.doubleGroupedInput .form-control{
+    font-size: 14px;
+}
 .loginNowBtn {
     background-color: #c20411;
     border: 0px solid;
